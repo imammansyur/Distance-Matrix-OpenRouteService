@@ -72,6 +72,8 @@ def main():
     global counter
     counter = 0
 
+    os.makedirs("response", exist_ok=True)
+
     for n, row in df.iterrows():
         for m, row in df.iterrows():        
             if n==m:
